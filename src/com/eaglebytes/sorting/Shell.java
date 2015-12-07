@@ -708,6 +708,7 @@ public class Shell extends javax.swing.JFrame {
             ((Sort) sortArray[sortTypes.getSelectedIndex()]).sortStep(data);
             temp = ((Sort) sortArray[sortTypes.getSelectedIndex()]).getTemp();
             tempIndex = ((Sort) sortArray[sortTypes.getSelectedIndex()]).getTempIndex();
+            selectDataIndex(tempIndex);
             setShadeSequentially(startColor, endColor);
             repaint();
         }
@@ -886,10 +887,10 @@ public class Shell extends javax.swing.JFrame {
         private boolean firstSelection = false;
 
         public void selectDataIndex(int index) {
-            if (firstSelection = !firstSelection)
+            //if (firstSelection = !firstSelection)
                 this.selectedIndices[0] = index;
-            else
-                this.selectedIndices[1] = index;
+            //else
+             //   this.selectedIndices[1] = index;
 
 //            if(selectedIndices[1] != -1){
 //                swap(selectedIndices[0], selectedIndices[1]);
